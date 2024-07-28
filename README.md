@@ -1,1 +1,1 @@
-# Mp-practical-class
+# MP-practical

@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>Pemba</title>
+<style>
+	* {
+	font-family: sans-serif;
+	}
+	
+	.container{
+	display:flex;
+	justify-content: center;
+	background-color: #e7e7e7;
+	height: 100%;
+	margin: 0;
+	}
+	
+	.container1 {
+	width:700px;
+	height: 400px;
+	display:flex;
+	justify-content: center;
+	text-align: center;
+	background-color: white;
+	flex-direction: column;
+	padding: 30px;
+	margin-top: 40px;
+	box-shadow: 10px 20px 20px 0px black;
+	}
+
+	table{
+	border-collapse:collapse;
+	width: 100%;
+	margin-top: 10px;
+	font-size: 14px;
+	}
+	
+	table th{
+	text-align: left;
+	padding: 10px;
+	border: 0.5px solid grey;
+	}
+
+	table .grey {
+	background-color: #e7e7e7;
+	}
+
+	table td {
+	border: 0.5px solid grey;
+	padding:10px;
+	}
+	
+	input {
+	width: 70%;
+	height: 30px;
+	border: 0.5px solid grey;
+	border-radius: 5px;
+	font-size: 12px;
+	}
+
+	button{
+	color:white;
+	background-color: purple;
+	border:none;
+	border-radius: 5px;
+	height: 30px;
+	}
+	
+	button:hover {
+	background-color:#794b79;
+	}
+
+	h2{
+	color: purple;
+	font-size: 20px;
+	}
+
+</style>
+</head>
+<body>
+	<div class="container">
+	<div class="container1">
+	<h2>SEARCH WITHIN TABLE</h2>
+	<label for="Search-text" >
+		<input type="text" placeholder="Search something here..." name="Search-text">
+		<button onclick="#">Search</button>
+	</label>
+	<table border="0.5px">
+		<tr>
+			<th>#</th>
+			<th>First Name</th>
+			<th>Last Name</th>
+			<th>Username</th>
+		</tr>
+		<tr>
+			<td>1</td>
+			<td>Ram</td>
+			<td>Khadka</td>
+			<td>m@12</td>
+		</tr>
+		<tr class="grey">
+			<td>2</td>
+			<td>Shyam</td>
+			<td>Karki</td>
+			<td>@sm</td>
+		</tr>
+		<tr>
+			<td>3</td>
+			<td>Hari</td>
+			<td>Bhatta</td>
+			<td>@hari</td>
+		</tr>
+		<tr class="grey">
+			<td>4</td>
+			<td>Mark</td>
+			<td>Zukarbar</td>
+			<td>@mdo</td>
+		</tr>
+		<tr>
+			<td>5</td>
+			<td>Raj</td>
+			<td>Thapa</td>
+			<td>@rj</td>
+		</tr>
+		<tr class="grey">
+			<td>6</td>
+			<td>Harry</td>
+			<td>Neupane</td>
+			<td>@harry</td>
+		</tr>
+	</table>
+	</div>
+	</div>
+</body>
+</html>
