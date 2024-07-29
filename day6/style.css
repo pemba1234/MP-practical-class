@@ -1,0 +1,163 @@
+	html {
+	scroll-behavior: smooth;
+	}
+	
+	* {
+	margin: 0;
+	color:#00246B;
+	}
+	
+	body {
+	background-color: #CADCFC;
+	}
+	
+	a {
+	text-decoration: none;
+	font-size: 20px;
+	color: #CADCFC;
+	padding: 20px;
+	}
+	
+	.nav-links a:hover {
+	background-color: #CADCFC;
+	color: #00246B;
+	transition: all ease 0.4s;
+	}
+	
+	nav {
+	position: fixed;
+	background-color: #00246B;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	align-items: center;
+	color: #CADCFC;
+	width: 100%;
+	top:0;
+	}
+	
+	.nav-links {
+	margin-right: 30px;
+	display: flex;
+	}
+/* ************ Home page **************** */
+	.png-img {
+	box-shadow: 1px 1px 1px -1px #CADCFC;
+	width: 40%;
+	height: auto;
+	}
+	
+	h3 {
+	margin-top: 50px;
+	}
+	
+	table {
+	text-align: center;
+	width: 300px;
+	font-size: 20px; 
+	margin-top: 10px;
+	}
+	
+	.container-home {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	}
+	
+	.container{
+	margin:60px 0px 0 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	position: static;
+	}
+
+	.text-home {
+	font-size: 20px; 
+	margin-right:-250px; 
+	}
+	
+	.hi {
+	color: red;
+	font-size:40px;
+	}
+	
+	b{
+	font-size: 25px;
+	}
+	/* ***************** about Page **************** */
+	
+	#about{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	}
+		
+	.about-txt {
+	font-size: 18px;
+	text-align: justify;
+	width: 500px;
+	padding: 15px 150px 15px 15px;
+	margin-right: -150px;
+	box-shadow: 1px 1px 18px 0px black;
+	}
+	
+	.about-txt p b{
+	font-size: 20px;
+	}
+	
+	.abt-hi{
+	color: red;
+	font-size: 25px;
+	}
+	
+	.imgs img{
+	height: 550px; 
+	}
+/* ************************** Projects page ********************************* */
+	
+	#projects {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
+	grid-gap: 30px;
+	margin-bottom: 30px;
+	align-items:center;
+	justify-content: center;
+	}
+	
+	.project1 {
+	text-align: center;
+	width: 200px;
+	height: 300px;
+	}
+	
+	.project1 img {
+	width: 200px;
+	height: 200px;
+	}
+
+/* **************************** contact *************************************** */
+	#contact {
+	height: 100%;
+	width: 100%;
+	background-color: #00246B;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	}
+	
+	#contact h2 {
+	font-size: 40px;
+	color: #CADCFC;
+	margin-bottom: 50px;
+	}
+	
+	#contact i {
+	font-size: 40px;
+	margin-bottom: 30px;
+	}
+
