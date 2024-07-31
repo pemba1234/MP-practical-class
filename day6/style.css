@@ -2,48 +2,88 @@
 	scroll-behavior: smooth;
 	}
 	
+	#home,#about,#projects,#contact  {
+		height: 100%;
+	}
+	
+	main{
+		width: 150px;
+	}
+
 	* {
 	margin: 0;
 	color:#00246B;
+	font-family: Arial,sans-serif;
 	}
 	
 	body {
-	background-color: #CADCFC;
+	background-color: #ffffff;
 	}
-	
-	a {
-	text-decoration: none;
-	font-size: 20px;
-	color: #CADCFC;
-	padding: 20px;
-	}
-	
-	.nav-links a:hover {
-	background-color: #CADCFC;
-	color: #00246B;
-	transition: all ease 0.4s;
-	}
-	
-	nav {
-	position: fixed;
+
+	/* -------------- nav bar start ---------------- */ 
+nav {
 	background-color: #00246B;
 	display: flex;
-	justify-content: space-between;
-	padding: 0 20px;
-	align-items: center;
+	flex-direction: column;
+	width: 150px;
+	height: 100%;
+	position: fixed;
+  }
+
+  
+  nav .main-drop .drop {
+	display: none;
+  }
+
+  nav h2 {
 	color: #CADCFC;
-	width: 100%;
-	top:0;
-	}
-	
-	.nav-links {
-	margin-right: 30px;
-	display: flex;
-	}
+	margin-bottom: 100px;
+	padding: 20px;
+  }
+  
+  nav a {
+	text-decoration: none;
+	color: #CADCFC;
+	padding: 10px 20px;
+	display: block;
+  }
+  
+  nav a:hover {
+	background-color: #CADCFC;
+	color: #00246B;
+	transition: all ease-in-out 0.3s;
+  }
+  
+  .drop-down {
+	display: inline-block;
+  }
+  
+  .drop-down .content {
+	display: none;
+	position: absolute;
+	background-color: #00246B;
+	padding: 10px 20px;
+	margin-left: 82px;
+	margin-top: -30px;
+  }
+  
+  .drop-down:hover .content {
+	display: block;
+  }
+  
+  .drop-down .content a {
+	display: block;
+	padding: 10px;
+	color: #CADCFC;
+  }
+  
+  .drop-down .content a:hover {
+	background-color: #CADCFC;
+	color: #00246B;
+  }
 /* ************ Home page **************** */
 	.png-img {
-	box-shadow: 1px 1px 1px -1px #CADCFC;
-	width: 40%;
+	width: 400px;
 	height: auto;
 	}
 	
@@ -71,12 +111,13 @@
 	justify-content: center;
 	align-items: center;
 	height: 100%;
-	position: static;
 	}
 
 	.text-home {
 	font-size: 20px; 
-	margin-right:-250px; 
+	margin-right:-220px; 
+	width:350px;
+	height: auto;
 	}
 	
 	.hi {
@@ -118,14 +159,22 @@
 	height: 550px; 
 	}
 /* ************************** Projects page ********************************* */
-	
+	.pro {
+		display: flex;
+		justify-content:end;
+	}
+
 	#projects {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 250px));
-	grid-gap: 30px;
-	margin-bottom: 30px;
-	align-items:center;
-	justify-content: center;
+	display:flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 20px;
+	justify-content: space-evenly;
+	height: 100%;
+	width: 80%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	margin-right: 100px;
 	}
 	
 	.project1 {
@@ -146,6 +195,7 @@
 	background-color: #00246B;
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	}
@@ -161,3 +211,172 @@
 	margin-bottom: 30px;
 	}
 
+	.map {
+		display: flex;
+		justify-content:center ;
+		align-items: center;
+		width:300px;
+		margin-bottom: 40px;
+		margin-right: 20px;
+	}
+
+	iframe {
+		width: 200px;
+		height: 200px;
+	}
+
+	.main-contact {
+		display: flex;
+		background-color: #00246B;
+		height: 100%;
+	}
+/* ---------------form----------------------- */
+
+#form {
+	display: flex;
+	justify-content: end;
+	height: 100%;
+	background-color: #D0E6F6;
+	margin-top: 30px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 900px;
+	padding-right: 200px;
+}
+
+.form-item {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	height: auto;
+	justify-content: center;
+	border: 1px solid #6B0000;
+	padding: 20px;
+	margin-top: 60px;
+}
+
+form h3{
+	width:160px;
+	height: auto;
+	background-color: #D0E6F6;
+	position: absolute;
+	color: #6B0000;
+}
+
+#name,#email {
+	margin: 10px 0 20px 0px;
+	height: 30px;
+	border: none;
+	border-radius: 5px;
+}
+
+label {
+	display:flex;
+	flex-direction: column;
+	color: #6B0000;
+}
+
+button {
+	width: 100px;
+	height: 30px;
+	border: 1px solid #6B0000;
+	background-color: #D0E6F6;
+	color: #6B0000;
+}
+
+.gender, .agree{
+	display: block;
+	margin: 10px 0 20px 0px;
+}
+
+button:hover {
+	background-color: #6B0000;
+	color:#D0E6F6;
+	transition: all ease-in-out 0.3s;
+}
+/* ---------------- Media query for tablet------------- */
+
+@media all and (max-width:1170px ){
+
+	/* -------------- nav bar start ---------------- */ 
+nav {
+	flex-direction: row;
+	width: 100%;
+	height: auto;
+  }
+
+  .nav-content {
+	display: flex;
+	width: 100%;
+	justify-content: end;
+	margin-right: 50px;
+  }
+
+  .nav {
+	display: flex;
+  }
+
+  .drop-down .content {
+	margin-left: 0px;
+	margin-top:0;
+	padding: 20px;
+  }
+  
+  nav h2 {
+	margin-bottom: 0;
+	padding: 20px;
+	width: 300px;
+  }
+
+  nav a {
+	padding: 20px;
+  }
+/* --------- project------------------ */
+.pro {
+	justify-content:center;
+}
+
+.project1 {
+width: 400px;
+}
+
+.project1 img {
+width: 400px;
+}
+/* ----------------form------------------------- */
+#form {
+	justify-content: center;
+}
+
+form {
+	padding-right:0px;
+}
+}
+
+/* ----------media query for mobile--------------------------- */
+
+@media all and (max-width:750px){
+	nav .main-drop .drop {
+		display: block;
+		padding: 10px;
+		margin: 0 0 0 10px;
+	  }
+	
+	.drop:hover .nav a{ 
+		display: block;
+		cursor: pointer;
+	  }
+	
+	  nav h2 {
+		padding: 10px;
+	  }
+	  
+	  nav a {
+		display: none;
+		padding: 10px;
+	  }
+}
