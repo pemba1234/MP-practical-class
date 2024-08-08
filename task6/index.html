@@ -20,34 +20,29 @@
     /> -->
   </head>
   <body>
-    <main>
-      <nav>
-        <h2>Pemba's Portfolio</h2>
-        <div class="nav-content">
-          <div class="main-drop">
-            <div class="drop">
-              <i class="fa-solid fa-bars" style="color: #cadcfc"></i>
-            </div>
-            <div class="nav">
-              <a href="#home">Home</a>
-              <div class="drop-down">
-                <a href="#about">About</a>
-                <div class="content">
-                  <a href="/day2/pemba-CV.html" target="_blank">CV</a>
-                  <a href="#">Achievements</a>
-                  <a href="#">Skills</a>
-                  <a href="#">Experience</a>
-                  <a href="#">Gallary</a>
-                </div>
-              </div>
-              <a href="#projects">Projects</a>
-              <a href="#form">Message</a>
-              <a href="#contact">Contact</a>
-            </div>
+    <nav>
+      <h2>Pemba's Portfolio</h2>
+      <div class="drop" onclick="menu()">
+        <img src="menu.png" alt="" />
+      </div>
+      <div class="submenu" id="submenu"></div>
+      <div class="nav">
+        <a href="#home">Home</a>
+        <div class="drop-down">
+          <a href="#about">About</a>
+          <div class="content">
+            <a href="/day2/pemba-CV.html" target="_blank">CV</a>
+            <a href="#">Achievements</a>
+            <a href="#">Skills</a>
+            <a href="#">Experience</a>
+            <a href="#">Gallary</a>
           </div>
         </div>
-      </nav>
-    </main>
+        <a href="#projects">Projects</a>
+        <a href="#form">Message</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
     <!-- ************************************************************************* -->
     <div class="container-home" id="home">
       <div class="container">
@@ -81,11 +76,11 @@
         </table>
       </div>
     </div>
-    <!-- ************************************************************************* -->
+    <!-- ********************************** About Section *************************************** -->
     <section id="about">
       <div class="about-txt">
         <p>
-          <span class="abt-hi">Hi, </span><b>I’m Pemba Gelu Sherpa,</b> a
+          <span class="abt-hi">Hi,</span><b>I'm Pemba Gelu Sherpa,</b> a
           passionate web developer with a strong background in
           <i class="fa-brands fa-html5"></i> HTML,
           <i class="fa-brands fa-css3-alt"></i> CSS,
@@ -104,7 +99,7 @@
         </p>
       </div>
       <div class="imgs">
-        <img src="lololo.png" alt="Pemba Image" />
+        <img src="lolol.png" alt="Pemba Image" />
       </div>
     </section>
     <!-- *********************************************************************** -->
@@ -216,9 +211,13 @@
           </label>
           <label for="message">
             Enter Your Message:
-            <textarea name="message" id="message" required rows="15" cols="20">
-type your message</textarea
-            >
+            <textarea
+              name="message"
+              id="message"
+              required
+              rows="15"
+              cols="20"
+            ></textarea>
           </label>
           <label for="agree" class="agree">
             <input type="checkbox" name="agree" id="agree" />:Agree
@@ -243,7 +242,7 @@ type your message</textarea
         <a href="mailto:pembagg122@gmail.com" target="_blank"
           ><i class="fa-solid fa-envelope" style="color: #74c0fc"></i
         ></a>
-        <a href="https://github.com/pemba1234"
+        <a href="https://github.com/pemba1234" target="_blank"
           ><i class="fa-brands fa-github" style="color: #74c0fc"></i
         ></a>
       </div>
@@ -265,5 +264,11 @@ type your message</textarea
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script> -->
+    <script>
+      let submenu = document.getElementById("submenu");
+      function menu() {
+        submenu.classlist.toggle("nav");
+      }
+    </script>
   </body>
 </html>

@@ -6,10 +6,6 @@
 		height: 100%;
 	}
 	
-	main{
-		width: 150px;
-	}
-
 	* {
 	margin: 0;
 	color:#00246B;
@@ -31,7 +27,7 @@ nav {
   }
 
   
-  nav .main-drop .drop {
+  nav .drop  img{
 	display: none;
   }
 
@@ -47,6 +43,11 @@ nav {
 	padding: 10px 20px;
 	display: block;
   }
+
+  .nav-content{
+	display: flex;
+	flex-direction: column;
+  }
   
   nav a:hover {
 	background-color: #CADCFC;
@@ -54,10 +55,7 @@ nav {
 	transition: all ease-in-out 0.3s;
   }
   
-  .drop-down {
-	display: inline-block;
-  }
-  
+
   .drop-down .content {
 	display: none;
 	position: absolute;
@@ -106,7 +104,6 @@ nav {
 	}
 	
 	.container{
-	margin:60px 0px 0 60px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -115,7 +112,7 @@ nav {
 
 	.text-home {
 	font-size: 20px; 
-	margin-right:-220px; 
+	margin-right:-200px; 
 	width:350px;
 	height: auto;
 	}
@@ -135,6 +132,8 @@ nav {
 	justify-content: center;
 	align-items: center;
 	height: 100%;
+	width: 100%;
+	margin-right: 0;
 	}
 		
 	.about-txt {
@@ -156,7 +155,8 @@ nav {
 	}
 	
 	.imgs img{
-	height: 550px; 
+		width: 300px;
+	height: auto; 
 	}
 /* ************************** Projects page ********************************* */
 	.pro {
@@ -168,13 +168,12 @@ nav {
 	display:flex;
 	flex-wrap: wrap;
 	gap: 30px;
-	margin-bottom: 20px;
+	padding:40px 100px 20px 0px;
 	justify-content: space-evenly;
 	height: 100%;
 	width: 80%;
 	overflow-x: hidden;
 	overflow-y: hidden;
-	margin-right: 100px;
 	}
 	
 	.project1 {
@@ -234,10 +233,10 @@ nav {
 
 #form {
 	display: flex;
-	justify-content: end;
-	height: 100%;
+	justify-content: center;
+	height: auto;
 	background-color: #D0E6F6;
-	margin-top: 30px;
+	padding: 0px 0 10px 0;
 }
 
 form {
@@ -245,7 +244,6 @@ form {
 	flex-direction: column;
 	align-items: center;
 	width: 900px;
-	padding-right: 200px;
 }
 
 .form-item {
@@ -254,17 +252,17 @@ form {
 	width: 50%;
 	height: auto;
 	justify-content: center;
-	border: 1px solid #6B0000;
 	padding: 20px;
-	margin-top: 60px;
+	margin-bottom: 20px;
+	box-shadow: 1px 15px 15px 1px #000000;
 }
 
 form h3{
 	width:160px;
 	height: auto;
 	background-color: #D0E6F6;
-	position: absolute;
 	color: #6B0000;
+	margin-bottom: 10px;
 }
 
 #name,#email {
@@ -330,6 +328,7 @@ nav {
 	margin-bottom: 0;
 	padding: 20px;
 	width: 300px;
+	font-size:1rem ;
   }
 
   nav a {
@@ -360,23 +359,115 @@ form {
 /* ----------media query for mobile--------------------------- */
 
 @media all and (max-width:750px){
-	nav .main-drop .drop {
+	nav{
+		position: fixed;
+	}
+
+	nav .drop img{
+        display: block;
+		align-items: end;
+        margin: 10px;
+		width: 40px;
+        /* text-align: center; */
+    }
+
+	.drop{
 		display: block;
-		padding: 10px;
-		margin: 0 0 0 10px;
-	  }
+	}
+
+	.nav a{
+		padding: 10px 20px 10px 20px;
+		margin:5px;
+		font-size: 1rem;
+		background-color: #00246B;
+	}
+
+	.nav a:hover{
+		background-color: #CADCFC;
+		color: #00246B;
+	}
+
+	.nav {
+		display: flex;
+		flex-direction: column;
+		justify-content: end;
+		width: 100%;
+		background-color: #ffffff;
+		text-align: center;
+		margin: 60px 100px;
+		position: absolute;
+	}
+
+
+    nav h2 {
+        width: 300px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 500px){
+
+	nav h2 {
+        width: 300px;
+        text-align: center;
+        font-size: 12px;
+    }
+
+/* ---------------home--------------------- */
+	.png-img {
+		width: 200px;
+		height: auto;
+		}
+		
+		table {
+		font-size: 1rem; 
+		margin-bottom: 0px;
+		}
+
+		.text-home {
+		font-size: 1rem; 
+		}
+
+		.container{
+			height: 400px;
+		}
+		
+		
+		.hi {
+		font-size:25px;
+		}
+		
+		b{
+		font-size: 20px;
+		}
+
+/* -------------------about-------------------- */
+
+#about{
+	padding-top: 100px;
+	height: 500px;
+	}
+		
+	.about-txt {
+	font-size: 1rem;
+	width: 300px;
+	padding: 70px 10px 10px 10px;
+	margin-right: -150px;
+	box-shadow: 1px 1px 18px 0px black;
+	}
 	
-	.drop:hover .nav a{ 
-		display: block;
-		cursor: pointer;
-	  }
+	.about-txt p b{
+	font-size: 1rem;
+	}
 	
-	  nav h2 {
-		padding: 10px;
-	  }
-	  
-	  nav a {
-		display: none;
-		padding: 10px;
-	  }
+	.abt-hi{
+	color: red;
+	font-size: 20px;
+	}
+	
+	.imgs img{
+	margin:-320px 0 0 0; 
+	width: 150px;
+	}
 }
