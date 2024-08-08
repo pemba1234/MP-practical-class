@@ -30,8 +30,8 @@
               <input
                 type="button"
                 id="plus-minus"
-                value="+/-"
-                onclick="display.value += '+/-' "
+                value="DEL"
+                onclick="display.value = display.value.toString().slice(0,-1) "
               />
               <input
                 id="mode"
@@ -42,8 +42,8 @@
               <input
                 type="button"
                 id="divide"
-                value="÷"
-                onclick=" display.value += '÷' "
+                value="/"
+                onclick=" display.value += '/' "
               />
               <input
                 type="button"

@@ -35,7 +35,7 @@ body {
 input {
     border-radius: 5px;
     width: 150px;
-    height: 4vh;
+    height: 2rem;
     text-align: end;
     border-style: none;
 }
